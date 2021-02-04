@@ -8,13 +8,14 @@
 int main(void)
 {
 int nm;
-for (nm = '0' ; nm <= '9' ; nm++)
+for (nm = 48 ; nm <= 57 ; nm++)
 {
-putchar ('nm');
-putchar(' ,');
-if (nm == 9)
-nm = 10;
+putchar(nm);
+if (nm != 57)
+{
+putchar(' ');
+putchar(',');
 }
-putchar('\n');
+}
 return (0);
 }
