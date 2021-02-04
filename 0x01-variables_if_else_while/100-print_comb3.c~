@@ -1,0 +1,26 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+  int nm;
+  int num;
+  for (nm = '0' ; nm <= '9' ; nm++)
+    {
+      for (num = '0' ; num <= '9' ; num++)
+	{
+	  putchar(nm);
+	  putchar(num);
+	  if (nm != '8' || num != '9')
+	    {
+	      putchar(',');
+	      putchar(' ');
+	    }
+	}
+    }
+  putchar('\n');
+  return (0);
+}
