@@ -8,13 +8,13 @@ int main(void)
 {
 int nm;
 int num;
-for (nm = 48 ; nm <= 57 ; nm++)
+for (nm = '0' ; nm <= '9' ; nm++)
 {
-for (num = 48 ; num <= 57 ; num++)
+for (num = '0' ; num <= '9' ; num++)
 {
 putchar(nm);
 putchar(num);
-if (nm != 57 && num != 57)
+if (nm != '9' || num != '9')
 {
 putchar(',');
 putchar(' ');
