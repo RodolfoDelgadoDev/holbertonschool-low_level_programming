@@ -8,7 +8,7 @@ int main(void)
 {
 int nm;
 int num;
-for (nm = '0' ; nm <= '9' ; nm++)
+for (nm = '0' ; nm <= '8' ; nm++)
 {
 for (num = '0' ; num <= '9' ; num++)
 {
