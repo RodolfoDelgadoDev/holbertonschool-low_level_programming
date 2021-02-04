@@ -12,8 +12,8 @@ for (nm = 48 ; nm <= 57 ; nm++)
 putchar(nm);
 if (nm != 57)
 {
-putchar(95);
-putchar(44);
+putchar(',');
+putchar(' ');
 }
 }
 return (0);
