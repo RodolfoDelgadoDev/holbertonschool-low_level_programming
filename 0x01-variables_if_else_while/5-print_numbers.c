@@ -7,6 +7,10 @@
  */
 int main(void)
 {
-
-  return (0);
+int nm;
+for (nm = '0' ; nm <= '9' ; nm++)
+{
+putchar(nm);
+}
+return (0);
 }
