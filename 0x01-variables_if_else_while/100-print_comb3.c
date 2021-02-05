@@ -1,23 +1,29 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
+ *
  */
+
 int main(void)
 {
-int nm;
-int num;
-for (nm = '0' ; nm <= '8' ; nm++)
+int n1;
+int n2;
+for (n1 = '0'; n1 <= '8'; n1++)
 {
-for (num = '0' ; num <= '9' ; num++)
+for (n2 = n1; n2 <= '9'; n2++)
 {
-putchar(nm);
-putchar(num);
-if (nm != '8' || num != '9')
+if (n1 != n2)
+{
+putchar(n1);
+putchar(n2);
+if (n1 != '8')
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
