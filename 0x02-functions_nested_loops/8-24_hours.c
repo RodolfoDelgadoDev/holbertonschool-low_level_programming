@@ -23,8 +23,8 @@ for (n3 = '0'; n3 <= '9'; n3++)
 {
 _putchar(n0);
 _putchar(n1);
-_putchar(n2);
 _putchar(':');
+_putchar(n2);
 _putchar(n3);
 _putchar('\n');
 }
