@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_last_digit - Entry point
- * @n: nothing
+ * @n: check5
  * Return: c (Success)
  */
 int print_last_digit(int n)
