@@ -1,15 +1,15 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-int main ()
+void print_alphabet(void)
 {
 char ch;
-for(ch = 'a' ; ch <= 'z' ; ch++)
+for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 _putchar(ch);
 }
-return(0);
+-putchar('\n');
 }
