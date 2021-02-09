@@ -12,10 +12,10 @@ n = n*(-1);
 n = n % 10;
 _putchar(n + '0');
 }
-else 
+else
 {
 n = n % 10;
 _putchar(n + '0');
 }
-return(n);
+return (n);
 }
