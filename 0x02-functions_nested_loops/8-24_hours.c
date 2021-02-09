@@ -12,10 +12,10 @@ int n0;
 int n1;
 int n2;
 int n3;
-bool b = true; 
+bool b = true;
 for (n0 = '0'; n0 <= '2'; n0++)
 {
-for (n1 = '0'; n1 <= '9'; n1++ && b == true)
+for (n1 = '0'; n1 <= '9' && b == true ; n1++)
 {
 for (n2 = '0'; n2 <= '5'; n2++)
 {
@@ -29,10 +29,11 @@ _putchar(n3);
 _putchar('\n');
 }
 }
-if ( n0 == '2' && n1 == '3')   
+if (n0 == '2' && n1 == '3')
 {
 b = false;
 }
 }
 }
 }
+
