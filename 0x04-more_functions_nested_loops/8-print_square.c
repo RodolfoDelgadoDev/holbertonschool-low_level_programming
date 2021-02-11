@@ -16,9 +16,6 @@ if (size > 0)
 {
 _putchar('#');
 }
-if (size == 0)
-_putchar('\n');
-}
 _putchar('\n');
 }
 }
