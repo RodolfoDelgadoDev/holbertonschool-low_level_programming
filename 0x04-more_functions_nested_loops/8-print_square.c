@@ -19,6 +19,6 @@ _putchar('#');
 }
 _putchar('\n');
 }
-if (size == 0)
+if (size <= 0)
 _putchar(10);
 }
