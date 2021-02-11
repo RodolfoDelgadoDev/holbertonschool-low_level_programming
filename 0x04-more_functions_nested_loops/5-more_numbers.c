@@ -14,7 +14,7 @@ for (n2 = 0; n2 <= 14; n2++)
 {
 int u = n2 % 10;
 int d = n2 / 10;
-if ( d == 1)
+if (d == 1)
 {
 _putchar(d + '0');
 }
