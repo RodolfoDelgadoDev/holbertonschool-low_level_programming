@@ -10,7 +10,7 @@ int f;
 int c;
 for (f = 1 ; f <= size ; f++)
 {
-for (c = 0 ; c <= size ; c++)
+for (c = 1 ; c <= size ; c++)
 {
 if (size > 0)
 {
