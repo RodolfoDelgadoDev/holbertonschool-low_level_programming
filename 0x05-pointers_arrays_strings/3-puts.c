@@ -1,10 +1,9 @@
 #include "holberton.h"
 /**
- * _strlen - check the code for Holberton School students.
+ * _puts - check the code for Holberton School students.
  * @str: string
  * Return: Always 0.
  */
-
 void _puts(char *str)
 {
 int a = 0;
