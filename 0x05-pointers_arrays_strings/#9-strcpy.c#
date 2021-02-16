@@ -1,0 +1,21 @@
+#include "holberton.h"
+
+/**
+ * _strcpy - check the code for Holberton School students.
+ * @dest: dest
+ * @src: src
+ * Return: Always 0.
+ */
+char *_strcpy(char *dest, char *src)
+{
+int i = 0;
+char c =t a = _strlen(src);
+a++;
+while ( i <= a)
+{
+src[i] = dest[i];
+i++;
+
+}
+return (c);
+}
