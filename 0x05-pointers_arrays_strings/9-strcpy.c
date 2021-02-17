@@ -12,7 +12,7 @@ int i = 0;
 
 int a = _strlen(src);
 a++;
-while (i <= a)
+while (i < a)
 {
 dest[i] = src[i];
 i++;
