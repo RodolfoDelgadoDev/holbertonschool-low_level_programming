@@ -5,3 +5,8 @@
  *
  * Return: Always 0.
  */
+void puts_half(char *str)
+{
+  int tm;
+  int mitad;
+int largo = 
