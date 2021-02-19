@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * rev_string - check the code for Holberton School students.
+ * reverse_array - check the code for Holberton School students.
  * @a: a
  * @n: n
  * Return: Always 0.
