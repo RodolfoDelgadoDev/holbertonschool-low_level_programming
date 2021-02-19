@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * _strncat - acheck the code for Holberton School students.
+ * _strcmp - acheck the code for Holberton School students.
  * @s1: s1
- * @s2: s2 
+ * @s2: s2
  * Return: Always 0.
  */
 int _strcmp(char *s1, char *s2)
@@ -15,12 +15,17 @@ while (s1[a] != '\0')
 a++;
 while (s2[b] != '\0')
 b++;
-if (a != b)
+
+for ( ; c <= a; c++, d++)
 {
-return ('-15');
+if (s1[c] == s2[d])
+{
+continue;
 }
- for ( ; c <= a; c++, d++)
+else
 {
-  if (s1[c] == s2[d])
-    {
- 
+return (s1[c] - s2[d]);
+}
+}
+return (0);
+}
