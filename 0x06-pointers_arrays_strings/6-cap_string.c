@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * cap_string - check the code for Holberton School students.
  * @s: SSSSssssSSS
  * Return: Always 0.
  */
