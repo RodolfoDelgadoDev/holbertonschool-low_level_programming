@@ -1,0 +1,28 @@
+#include "holberton.h"
+/**
+ * *_strchr - mamaaaauwuwuuu
+ * @c: the address of memory to print
+ * @s: the size of the memory to print
+ *
+ * Return: c
+ */
+char *_strchr(char *s, char c)
+{
+int n = 0;
+char *r = &s[n];
+
+while (s[n] != '\0')
+{
+	if (s[n] == c)
+	{
+		char *r = &s[n];
+		return (r);
+
+	}
+
+n++;
+}
+
+return (00);
+
+}
