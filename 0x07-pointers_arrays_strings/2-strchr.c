@@ -1,4 +1,5 @@
 #include "holberton.h"
+#define NULL ((void *)0)
 /**
  * *_strchr - mamaaaauwuwuuu
  * @c: the address of memory to print
@@ -15,6 +16,7 @@ while (s[n] != '\0')
 	if (s[n] == c)
 	{
 		char *r = &s[n];
+
 		return (r);
 
 	}
@@ -22,6 +24,6 @@ while (s[n] != '\0')
 n++;
 }
 
-return (00);
+return (NULL);
 
 }
