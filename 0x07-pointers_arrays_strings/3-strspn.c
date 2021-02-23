@@ -2,27 +2,27 @@
 #define NULL ((void *)0)
 /**
  * _strspn - pn
- * @c: the address of memory to print
- * @s: the size of the memory to print
+ * @accept: acpt
+ * @s: ss
  *
  * Return: c
  */
 unsigned int _strspn(char *s, char *accept)
 {
+	int a;
+	int b;
+	int c = 0;
+	char *f = accept;
 
-	while (*s != '\0')
+	for (a = 0; a <= b; a++)
 	{
-		if (*s == c)
+		for (b = 0; f[b] != '\0'; b++)
 		{
-			return (s);
-
+			if (f[b] == s[a])
+			{
+				c++;
+			}
 		}
-
-		s++;
 	}
-	if (*s == c)
-		return (s);
-
-	return (NULL);
-
+	return (c);
 }
