@@ -1,0 +1,18 @@
+#include "holberton.h"
+/**
+ * simple_print_buffer - prints buffer in hexa
+ * @s: the address of memory to print
+ * @b: the size of the memory to print
+ * @n: nnnnnnnnnnnnnnnnnnnnnnnnnn
+ * Return: Nothing.
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+int i = 0;
+int a = 0;
+int r = *s;
+while (s[i] != '\0')
+	i++;
+for ( ; i < n ; i++,a++)
+	s[a] = b;
+return (r);
