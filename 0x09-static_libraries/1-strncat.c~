@@ -1,0 +1,9 @@
+#include "holberton.h"
+/**
+ * _strncat - acheck the code for Holberton School students.
+ * @dest: dest
+ * @src: src
+ * @n: nnnnnnnnnnnnnnnnnnnnnnnnnn
+ * Return: Always 0.
+ */
+char *_strncat(char *dest, char *src, int n)
