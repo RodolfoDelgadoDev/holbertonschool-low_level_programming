@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
 {
 	int c;
 	int cuenta = 0;
+
 	if (argc == 1)
 	{
 		printf("0\n");
