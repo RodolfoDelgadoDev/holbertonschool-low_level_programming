@@ -13,12 +13,11 @@ int main(int argc, char *argv[])
 {
 	int c;
 	int cuenta = 0;
-	int a;
 
-	a = 0;
+
 	if (argc == 1)
 	{
-		printf("%d\n", a);
+		printf("0\n");
 		return (0);
 	}
 
