@@ -14,13 +14,6 @@ int main(int argc, char *argv[])
 	int c;
 	int cuenta = 0;
 
-
-	if (argc == 1)
-	{
-		printf("0\n");
-		return (0);
-	}
-
 	for (c = 1; c < argc; c++)
 	{
 		if (*argv[c] >= 48 && *argv[c] <= 57)
