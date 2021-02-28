@@ -13,24 +13,20 @@ int main(int argc, char *argv[])
 {
 	int c;
 	int cuenta = 0;
-	int ch;
+	int ch = 1;
 
 	for (c = 1; c < argc; c++)
 	{
-		for (ch = 0; argv[ch] != '\0'; ch++)
+		for (ch = 1; argv[c][ch] != '\0'; ch++)
 		{
-			if (*argv[ch] >= 48 && *argv[ch] <= 57)
-				continue;
-			printf("Error\n");
-			return (1);
+			if (argv[c][ch] < 48 || argv[c][ch] > 57)
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		if (*argv[c] >= 48 && *argv[c] <= 57)
-			cuenta += atoi(argv[c]);
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+
+		cuenta += atoi(argv[c]);
 	}
 
 	printf("%d\n", cuenta);
