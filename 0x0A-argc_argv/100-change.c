@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	c = atoi(argv[1]);
-
 	if (c <= 0)
 	{
 		printf("%d\n", 0);
