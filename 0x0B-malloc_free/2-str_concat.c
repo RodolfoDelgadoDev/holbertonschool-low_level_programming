@@ -1,31 +1,45 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * _strdup - prints buffer in hexa
- * @str: the size of the memory to print
+ * str_concat - prints buffer in hexa
+ * @s1: the size of the memory to print
+ * @s2: s2
  * Return: Nothing.
  */
-
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
 	int a = 0;
 	int b = 0;
-	char *new;
+	char *conc;
+	int c;
+	int d;
+	int j;
 
-	if (str == NULL)
+	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	while (str[a] != '\0')
+	while (s1[a] != '\0')
 		a++;
-	a++;
-	new = malloc(sizeof(char) * a);
-	if (new == NULL)
+	while (s2[b] != '\0')
+		b++;
+	b++;
+	c = a + b;
+	conc = malloc(sizeof(char) * c);
+	if (conc == NULL)
 		return (NULL);
-	for (; b <= a; b++)
-		new[b] = str[b];
-
-	return (new);
-
-
+	if (s1 == '\0')
+	{
+		conc = s2;
+		return (conc);
+	}
+	if (s2 == '\0')
+	{
+		conc = s1;
+		return (conc);
+	}
+	for (d = 0; d < a; d++)
+		conc[d] = s1[d];
+	for (j = 0; j < b; j++)
+		conc[a + j] = s2[j];
+	return (conc);
 }
