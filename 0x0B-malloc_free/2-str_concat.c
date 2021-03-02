@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	if (s1 == '\0' && s2 == '\0')
 	{
-		conc = s2;
+		conc[0] = '\0';
 		return (conc);
 	}
 	if (s1 == '\0')
