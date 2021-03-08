@@ -38,5 +38,9 @@ typedef struct dog dog_t;
 #endif
 #ifndef E
 #define E
+dog_t *new_dog(char *name, float age, char *owner);
+#endif
+#ifndef F
+#define F
 void free_dog(dog_t *d);
 #endif
