@@ -36,3 +36,7 @@ void print_dog(struct dog *d);
 #define D
 typedef struct dog dog_t;
 #endif
+#ifndef E
+#define E
+void free_dog(dog_t *d);
+#endif
