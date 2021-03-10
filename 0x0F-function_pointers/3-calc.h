@@ -20,7 +20,4 @@ int (*get_op_func(char *s))(int, int);
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
-
-
 #endif
