@@ -1,5 +1,4 @@
 #include <stdio.h>
-#inlcude "function_pointers.h"
 
 /**
  * print_name- print a name in uppercase
@@ -12,6 +11,6 @@
 void print_name(char *name, void (*f)(char *))
 {
 	if (name == '\0')
-		return(0);
+		return;
 	f(name);
 }
