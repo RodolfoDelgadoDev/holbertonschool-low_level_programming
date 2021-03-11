@@ -23,15 +23,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	for (a = 0; a < n; a++)
 	{
-		if ((a+1) == n)
-                {
-                        printf("%s\n", va_arg(ap, char *));
-                        return;
-                }
+		if ((a + 1) == n)
+		{
+			printf("%s\n", va_arg(ap, char *));
+			return;
+		}
 		printf("%s%s", va_arg(ap, char *), separator);
 	}
-
-
 	printf("\n");
 	va_end(ap);
 }
