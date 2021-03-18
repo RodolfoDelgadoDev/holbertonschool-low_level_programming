@@ -1,22 +1,16 @@
 #include "lists.h"
 
 /**
- * print_list - print a list
+ * list_len - lenght of the list
  * @h: header
- * Return: Always 0.
+ * Return: lenght
  */
 size_t list_len(const list_t *h)
 {
-	size_t c;
+	size_t c = 0;
 
 	while (h != NULL)
 	{
-		if (h->str == NULL)
-		{
-			h = h->next;
-			c++;
-			continue;
-		}
 		c++;
 		h = h->next;
 	}
