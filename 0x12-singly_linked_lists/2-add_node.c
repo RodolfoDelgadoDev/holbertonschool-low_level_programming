@@ -9,17 +9,17 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	int c = 0;
-	list_t n;
+	list_t *n;
 
+	n = malloc(sizeof(list_t));
 	while (str[c] != '\0')
 		c++;
 	c--;
-	n = malloc(sizeof(list_t));
-	if (new == NULL)
+	if (n == NULL)
 		return (NULL);
 	if (str == NULL)
 		return (0);
-	n->str = strdup(n);
+	n->str = strdup(str);
 	n->len = c;
 	n->next = *head;
 	*head = n;
