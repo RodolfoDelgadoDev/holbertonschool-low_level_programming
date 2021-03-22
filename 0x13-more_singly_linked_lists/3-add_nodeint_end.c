@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node - add a node
+ * add_nodeint_end - add a node at the end
  * @head: the head
  * @n: number
  * Return: Always 0.
