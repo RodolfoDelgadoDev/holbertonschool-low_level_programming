@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - nodes
+ * sum_listint - sum the n numbers of the list
  * @head: header
- * @index: index
- * Return: the nth node
+ * Return: the n numbers summed
  */
 int sum_listint(listint_t *head)
 {
 	int c = 0;
+
 	if (head == NULL)
 		return (0);
 	while (head != NULL)
