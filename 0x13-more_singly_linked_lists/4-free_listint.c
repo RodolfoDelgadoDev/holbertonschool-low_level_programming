@@ -1,10 +1,9 @@
 #include "lists.h"
 
 /**
- * add_nodeint - print a list
+ * free_listint - free list
  * @head: header
- * @n: number
- * Return: Always 0.
+ * Return: Nothing.
  */
 void free_listint(listint_t *head)
 {

@@ -4,7 +4,7 @@
  * add_nodeint_end - add a node at the end
  * @head: the head
  * @n: number
- * Return: Always 0.
+ * Return: Num
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {

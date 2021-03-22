@@ -4,7 +4,7 @@
  * add_nodeint - print a list
  * @head: header
  * @n: number
- * Return: Always 0.
+ * Return: node
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
