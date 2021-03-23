@@ -11,6 +11,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	listint_t *fire;
 	listint_t *aux = *head;
 
+	if (head == NULL)
+		return (NULL);
 	fire = malloc(sizeof(listint_t));
 	if (fire == NULL)
 	{
