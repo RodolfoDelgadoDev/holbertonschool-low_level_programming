@@ -28,7 +28,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		aux = aux->next;
 		c++;
 	}
-	if (c > idx + 1)
+	if (c > idx)
 	{
 		free(new);
 		return (NULL);
