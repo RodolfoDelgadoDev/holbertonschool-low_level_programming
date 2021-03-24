@@ -24,8 +24,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	if (index - 1 > c || b == NULL)
 		return (-1);
-        deleted = b->next;
-	b = deleted->next;
+	deleted = b->next;
+	b->next = deleted->next;
 	free(deleted);
 	return (1);
 }
