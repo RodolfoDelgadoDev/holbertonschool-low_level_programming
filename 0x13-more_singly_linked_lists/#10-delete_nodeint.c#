@@ -1,4 +1,4 @@
-#include "lists.h"
+0;10;1c#include "lists.h"
 /**
  * delete_nodeint_at_index - delete a node
  * @head: header
