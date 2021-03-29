@@ -1,8 +1,9 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * read_textfile - read text files.
+ * @filename: path
+ * @letters: letters
  * Return: Always 0.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -30,7 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (p < 0)
 	{
 		free(buffer);
-                return (0);
+		return (0);
 	}
 	t = write(STDOUT_FILENO, buffer, p);
 
