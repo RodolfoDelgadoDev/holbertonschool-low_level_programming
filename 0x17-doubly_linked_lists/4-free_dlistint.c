@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint - free list
+ * free_dlistint - freefire list
  * @head: header
  * Return: Nothing.
  */
