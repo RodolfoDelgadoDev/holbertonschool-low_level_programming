@@ -9,7 +9,6 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int idx;
-	char *val;
 	hash_node_t *fire, *aux;
 
 	if (!ht)
@@ -22,9 +21,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		fire = malloc(sizeof(hash_node_t));
 		if (fire == NULL)
 			return (0);
-		val = strdup(value);
-		fire->value = val;
-		fire->key = (char *)key;
+		fire->value = strdup(value);
+		fire->key = strdup((char *)key);
 		ht->array[idx] = fire;
 		return (1);
 	}
@@ -33,8 +31,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(aux->key, (char *)key) == 0)
 		{
-			val = strdup(value);
-			aux->value = val;
+			aux->value = strdup(value);
 			return (1);
 		}
 		aux = aux->next;
@@ -43,9 +40,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	fire = malloc(sizeof(hash_node_t));
 	if (fire == NULL)
 		return (0);
-	val = strdup(value);
-	fire->value = val;
-	fire->key = (char *)key;
+	fire->value = strdup(value);
+	fire->key = strdup((char *)key);
 	fire->next = ht->array[idx];
 	ht->array[idx] = fire;
 	return (1);
