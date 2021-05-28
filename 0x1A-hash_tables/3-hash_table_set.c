@@ -23,17 +23,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		fire = malloc(sizeof(hash_node_t));
 		if (fire == NULL)
-			return 0;
+			return (0);
 		fire->value = val;
 		ht->array[idx] = fire;
-		return 1;
+		return (1);
 	}
 	fire = malloc(sizeof(hash_node_t));
 	if (fire == NULL)
-		return 0;
+		return (0);
 	fire->value = val;
 	(ht->array[idx])->next = NULL;
 	fire->next = ht->array[idx];
 	ht->array[idx] = fire;
-	return 1;
+	return (1);
 }
