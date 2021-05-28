@@ -26,6 +26,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		fire->value = val;
 		fire->key = (char *)key;
 		ht->array[idx] = fire;
+		free(fire);
+		free(val);
 		return (1);
 	}
 	aux = ht->array[idx];
@@ -35,10 +37,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			val = strdup(value);
 			aux->value = val;
+			free(val);
+			free(aux);
 			return (1);
 		}
 		aux = aux->next;
 	}
+	free(aux);
 	fire = malloc(sizeof(hash_node_t));
 	if (fire == NULL)
 		return (0);
@@ -47,5 +52,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	fire->key = (char *)key;
 	fire->next = ht->array[idx];
 	ht->array[idx] = fire;
+	free(fire);
+	free(val);
 	return (1);
 }
