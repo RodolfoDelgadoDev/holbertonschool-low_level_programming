@@ -12,12 +12,12 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	fire = malloc(sizeof(hash_table_t));
 	if (fire == NULL)
-		return NULL;
+		return (NULL);
 	nodes = malloc(sizeof(hash_node_t **) * size);
 	if (nodes == NULL)
 	{
 		free(fire);
-		return NULL;
+		return (NULL);
 	}
 	fire->size = size;
 	fire->array = nodes;
