@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * hash_table_set -  adds an element to the hash table.
  * @ht: hash table you want to add or update the key/value to
@@ -18,12 +17,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!key || strlen(key) == 0 || !value)
 		return (0);
 	idx = key_index((const unsigned char *)key, ht->size);
-	val = strdup(value);
 	if (ht->array[idx] == NULL)
 	{
 		fire = malloc(sizeof(hash_node_t));
 		if (fire == NULL)
 			return (0);
+		val = strdup(value);
 		fire->value = val;
 		fire->key = (char *)key;
 		ht->array[idx] = fire;
@@ -34,6 +33,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(aux->key, (char *)key) == 0)
 		{
+			val = strdup(value);
 			aux->value = val;
 			return (1);
 		}
@@ -42,6 +42,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	fire = malloc(sizeof(hash_node_t));
 	if (fire == NULL)
 		return (0);
+	val = strdup(value);
 	fire->value = val;
 	fire->key = (char *)key;
 	fire->next = ht->array[idx];
