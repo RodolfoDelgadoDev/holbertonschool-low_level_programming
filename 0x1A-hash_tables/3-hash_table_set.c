@@ -32,7 +32,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (fire == NULL)
 		return (0);
 	fire->value = val;
-	(ht->array[idx])->next = NULL;
 	fire->next = ht->array[idx];
 	ht->array[idx] = fire;
 	return (1);
