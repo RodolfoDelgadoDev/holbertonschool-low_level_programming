@@ -11,7 +11,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int idx;
 	char *val;
-	hash_node_t *fire;
+	hash_node_t *fire, *aux;
 
 	if (!ht)
 		return (0);
@@ -28,6 +28,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		fire->key = (char *)key;
 		ht->array[idx] = fire;
 		return (1);
+	}
+	aux = ht->array[idx];
+	while (aux)
+	{
+		if (aux->key == (char *)key)
+		{
+			aux->value = val;
+			return (1);
+		}
+		aux = aux->next;
 	}
 	fire = malloc(sizeof(hash_node_t));
 	if (fire == NULL)
