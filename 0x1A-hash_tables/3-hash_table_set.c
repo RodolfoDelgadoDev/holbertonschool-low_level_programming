@@ -23,6 +23,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			return (0);
 		fire->value = strdup(value);
 		fire->key = strdup((char *)key);
+		fire->next = ht->array[idx];
 		ht->array[idx] = fire;
 		return (1);
 	}
@@ -31,12 +32,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(aux->key, (char *)key) == 0)
 		{
+			free(aux->value);
 			aux->value = strdup(value);
 			return (1);
 		}
 		aux = aux->next;
 	}
-	free(aux);
 	fire = malloc(sizeof(hash_node_t));
 	if (fire == NULL)
 		return (0);
