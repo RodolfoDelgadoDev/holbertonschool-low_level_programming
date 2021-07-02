@@ -1,4 +1,2 @@
-all: pr
-
-pr:
+all:
 	gcc main.c holberton.c -o holberton
